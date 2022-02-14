@@ -1,48 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import data from './data.json'
 import Card from './Card.js'
 
 const datas = JSON.stringify(data);
-console.log("data:", data)
-console.log("datas:", datas)
-const index=0;
-//const [index, setIndex] = useState({index=0});
-//const changeIndex = ()=>{setIndex({index=index+1})}
+console.log("data:", data);
+console.log("datas:", datas);
 
-/*var currentDataSet=data;
+export default function CardViewer(props) {
+    const [index, setIndex] = useState(0);
+    const incrementIndex = () => {
 
-function randomFlashCardIndex(currentSet){
-    return Math.floor(Math.random()*currentSet.length);
-}
+        setIndex((prev) => (prev + 1) % data.data.length); console.log(index)
+    }
+    const decrementIndex = () => {
+        setIndex((prev) => prev === 0 ? (data.data.length - 1) : (prev - 1)); console.log(index)
+    }
 
-function removeUsedCard(index, set){
-    return set.filter((val,i)=>{return i!==index})
-}
-
-function setCurrentCard(props){
-
-}*/
-
-function currentCard(){
-    return data.data[0];
-}
-
-function next(){
-    console.log('next')
-}
-
-function previous(){
-    console.log('prev')
-}
-
-export default function CardViewer() {
     return (
         <div>
             <p>CardViewer</p>
-            <Card mode='A' data={currentCard}/>
-            <Card mode='B' data={currentCard}/>
-            <button onClick={next}>{"<-"}</button>
-            <button onClick={previous}>{"->"}</button>
+            <Card mode='A' data={data.data[index]} />
+            <Card mode='B' data={data.data[index]} />
+            <button onClick={decrementIndex}>{"<-"}</button>
+            <button onClick={incrementIndex}>{"->"}</button>
         </div>
     )
 }
