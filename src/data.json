@@ -1,0 +1,13 @@
+{
+  "data": [
+    { "lang1": "val1-1", "lang2": "val1-2", "optional":"opt1" },
+    { "lang1": "val2-1", "lang2": "val2-2", "optional":"opt2" },
+    { "lang1": "val3-1", "lang2": "val3-2", "optional":"opt3" },
+    { "lang1": "val4-1", "lang2": "val4-2", "optional":"opt4" },
+    { "lang1": "val5-1", "lang2": "val5-2", "optional":"opt5" },
+    { "lang1": "val6-1", "lang2": "val6-2", "optional":"opt6" },
+    { "lang1": "val7-1", "lang2": "val7-2", "optional":"opt7" },
+    { "lang1": "val8-1", "lang2": "val8-2", "optional":"opt8" },
+    { "lang1": "val9-1", "lang2": "val9-2", "optional":"opt9" }
+  ]
+}
