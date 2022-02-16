@@ -1,10 +1,10 @@
 import './App.css';
-import CardViewer from './CardViewer';
+import Flashcards from './Flashcards';
 
 function App() {
   return (
     <div className="App">
-     <CardViewer/>
+      <Flashcards/>
     </div>
   );
 }
