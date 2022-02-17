@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.blue{
+  color:rgb(74, 74, 199);
+  background-color: rgb(25, 3, 65);
+}
+.pink{
+  color: pink;
+  background-color: rgb(167, 1, 167);
+}

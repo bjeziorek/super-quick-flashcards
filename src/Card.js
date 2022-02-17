@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from './ThemeContext';
 
 export default function Card(props) {
+    const context = useContext(ThemeContext);
 
     let output = '';
 
@@ -11,6 +13,6 @@ export default function Card(props) {
     }
 
     return (
-        <div>{output}</div>
+        <div className={context.currentTheme}>{output}</div>
     )
 }

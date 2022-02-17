@@ -1,10 +1,13 @@
 import './App.css';
 import Flashcards from './Flashcards';
+import ThemeProvider from './ThemeContext';
 
 function App() {
   return (
     <div className="App">
-      <Flashcards/>
+      <ThemeProvider>
+        <Flashcards />
+      </ThemeProvider>
     </div>
   );
 }
